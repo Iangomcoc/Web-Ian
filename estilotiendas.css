@@ -1,0 +1,179 @@
+/* Estilos para el body: 
+   - Se establece una fuente, color de fondo y se usa flexbox para centrar el contenido tanto vertical como horizontalmente.
+   - Se define que el body ocupe toda la altura de la ventana */
+   body {
+    font-family: Arial, sans-serif; 
+    background-color: #504a4a; /* Color oscuro para un fondo más profesional */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Estilos para los encabezados (h1, h2): 
+   - Define los colores para los encabezados principales y secundarios */
+h1 {
+    color: #ff4655; /* Rojo de Valorant */
+}
+
+h2 {
+    color: #f5a623; /* Amarillo de Fortnite */
+    margin-top: 20px;
+}
+
+/* Estilos para los párrafos (p): 
+   - Define color, alineación de texto y márgenes de los párrafos */
+p {
+    color: #ffffff; /* Blanco para mejor legibilidad */
+    text-align: center;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones: 
+   - Establece el fondo, color de texto, padding, bordes y otros estilos visuales para los botones */
+button {
+    background-color: #ff4655; /* Rojo de Valorant */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e03e4f; /* Color más oscuro para el efecto hover */
+}
+
+/* Estilos para los contenedores de tienda (store-container): 
+   - Cambia la disposición de los divs de tienda a fila (horizontal) y asegura que se distribuyan de manera equitativa */
+.store-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.store-container-rocketleague,
+.store-container-valorant,
+.store-container-fortnite {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.search-container i {
+    margin-right: 5px;
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+
+/* Estilos para los productos (product):
+   - Hace que los elementos dentro de cada producto (imagen, título, descripción y botón) se organicen en una columna */
+.product {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 10px;
+    padding: 10px;
+    background-color: #2c2c2c; /* Fondo gris oscuro para los productos */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 200px; 
+    text-align: center;
+}
+
+/* Estilos para la imagen de los productos: 
+   - Establece que la imagen ocupe el 100% del ancho del producto */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilos para el nombre del producto (h3) */
+.product h3 {
+    margin-top: 10px;
+    color: #f5a623; /* Amarillo de Fortnite */
+}
+
+/* Estilos para la descripción del producto (p) */
+.product p {
+    color: #ffffff; /* Blanco para mejor legibilidad */
+}
+
+/* Estilos para el precio del producto: 
+   - Cambia el color y el tamaño de la fuente para el precio */
+.product .price {
+    font-size: 18px;
+    color: #ff4655; /* Rojo de Valorant */
+}
+
+/* Estilos para el botón de cada producto:
+   - Aplica estilos similares al botón general, pero dentro del producto */
+.product button {
+    background-color: #ff4655; /* Rojo de Valorant */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #e03e4f; /* Color más oscuro para el efecto hover */
+}
+
+/* Estilos para el carrito de compras:
+   - Da un diseño similar a los productos, con fondo gris oscuro, bordes redondeados y sombra */
+.cart {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #2c2c2c; /* Fondo gris oscuro para el carrito */
+    border-radius: 8px;
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el total del carrito: 
+   - Aplica un tamaño de fuente mayor y color */
+.total {
+    font-size: 18px;
+    color: #ffffff; /* Blanco para mejor legibilidad */
+    margin-top: 20px;
+}

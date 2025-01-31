@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="fortniteicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilotiendas.css">
+    <title>Tienda Fortnite</title>
+</head>
+<body>
+    <h1>TIENDA ONLINE DE FORTNITE</h1>
+    <p>Bienvenido a la tienda de Fortnite donde podrás comprar cualquier cosa sin necesidad de esperar hasta que aparezca en la tienda</p>
+    <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="filterProducts()">
+    <h2>Artículos Disponibles</h2>
+    <div class="store-container-fortnite">
+        <div class="product">
+            <img src="skin1.jpg" alt="Skin 1">
+            <h3>Renegade Raider</h3>
+            <p>Una de las skins más raras de Fortnite.</p>
+            <p class="price">$15.99</p>
+            <button onclick="addToCart('Renegade Raider', 15.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="skin2.jpg" alt="Skin 2">
+            <h3>Black Knight</h3>
+            <p>Skin legendaria del pase de batalla de la Temporada 2.</p>
+            <p class="price">$19.99</p>
+            <button onclick="addToCart('Black Knight', 19.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="skin3.jpg" alt="Skin 3">
+            <h3>Ghoul Trooper</h3>
+            <p>Skin de Halloween muy popular.</p>
+            <p class="price">$14.99</p>
+            <button onclick="addToCart('Ghoul Trooper', 14.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="skin4.jpg" alt="Skin 4">
+            <h3>Drift</h3>
+            <p>Skin evolucionable de la Temporada 5.</p>
+            <p class="price">$16.99</p>
+            <button onclick="addToCart('Drift', 16.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="skin5.jpg" alt="Skin 5">
+            <h3>Raven</h3>
+            <p>Uno de los diseños más oscuros y populares.</p>
+            <p class="price">$18.99</p>
+            <button onclick="addToCart('Raven', 18.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="skin6.jpg" alt="Skin 6">
+            <h3>Peely</h3>
+            <p>La icónica banana de Fortnite.</p>
+            <p class="price">$12.99</p>
+            <button onclick="addToCart('Peely', 12.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="skin7.jpg" alt="Skin 7">
+            <h3>Midas</h3>
+            <p>Uno de los personajes más influyentes de la historia de Fortnite.</p>
+            <p class="price">$20.99</p>
+            <button onclick="addToCart('Midas', 20.99)">Añadir al carrito</button>
+        </div>
+    
+        <div class="product">
+            <img src="pack1.jpg" alt="Pack 1">
+            <h3>Pack Leyendas Congeladas</h3>
+            <p>Incluye skins con temática de hielo.</p>
+            <p class="price">$24.99</p>
+            <button onclick="addToCart('Pack Leyendas Congeladas', 24.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="pack2.jpg" alt="Pack 2">
+            <h3>Pack Llamas Legendarias</h3>
+            <p>Un conjunto exclusivo con skins llamativas.</p>
+            <p class="price">$29.99</p>
+            <button onclick="addToCart('Pack Llamas Legendarias', 29.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="pack3.jpg" alt="Pack 3">
+            <h3>Pack Fuego Oscuro</h3>
+            <p>Skins con un diseño infernal.</p>
+            <p class="price">$27.99</p>
+            <button onclick="addToCart('Pack Fuego Oscuro', 27.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="pack4.jpg" alt="Pack 4">
+            <h3>Pack Última Risa</h3>
+            <p>Incluye a Joker y otros villanos.</p>
+            <p class="price">$34.99</p>
+            <button onclick="addToCart('Pack Última Risa', 34.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="pack5.jpg" alt="Pack 5">
+            <h3>Pack Sombras</h3>
+            <p>Skins con un diseño oscuro y sigiloso.</p>
+            <p class="price">$26.99</p>
+            <button onclick="addToCart('Pack Sombras', 26.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="pack6.jpg" alt="Pack 6">
+            <h3>Pack Supervivencia</h3>
+            <p>Skins inspiradas en la supervivencia extrema.</p>
+            <p class="price">$22.99</p>
+            <button onclick="addToCart('Pack Supervivencia', 22.99)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="pack7.jpg" alt="Pack 7">
+            <h3>Pack Rebeldes</h3>
+            <p>Un conjunto de skins con un estilo rebelde y audaz.</p>
+            <p class="price">$28.99</p>
+            <button onclick="addToCart('Pack Rebeldes', 28.99)">Añadir al carrito</button>
+        </div>
+    
+        <div class="product">
+            <img src="fortnite_dance_floss.jpg" alt="Baile 1">
+            <h3>Floss</h3>
+            <p>Un baile icónico que se ha vuelto un fenómeno cultural.</p>
+            <p class="price">$5.99</p>
+            <button onclick="addToCart('Floss', 5.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_dance_default.jpg" alt="Baile 2">
+            <h3>Default Dance</h3>
+            <p>El baile clásico que todos conocen y aman.</p>
+            <p class="price">$4.99</p>
+            <button onclick="addToCart('Default Dance', 4.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_dance_take_the_l.jpg" alt="Baile 3">
+            <h3>Take the L</h3>
+            <p>Un baile que celebra la victoria de una manera divertida.</p>
+            <p class="price">$6.99</p>
+            <button onclick="addToCart('Take the L', 6.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_dance_orange_justice.jpg" alt="Baile 4">
+            <h3>Orange Justice</h3>
+            <p>Un baile lleno de energía y movimientos impresionantes.</p>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart('Orange Justice', 7.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_dance_savage.jpg" alt="Baile 5">
+            <h3>Savage</h3>
+            <p>Un baile que muestra tu estilo y actitud.</p>
+            <p class="price">$5.49</p>
+            <button onclick="addToCart('Savage', 5.49)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_dance_banana.jpg" alt="Baile 6">
+            <h3>Banana</h3>
+            <p>Un divertido baile que te hará sonreír.</p>
+            <p class="price">$4.49</p>
+            <button onclick="addToCart('Banana', 4.49)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_dance_renegade.jpg" alt="Baile 7">
+            <h3>Renegade</h3>
+            <p>Un baile popular que ha capturado la atención de todos.</p>
+            <p class="price">$6.49</p>
+            <button onclick="addToCart('Renegade', 6.49)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_battle_bus.jpg" alt="Vehículo 1">
+            <h3>Battle Bus</h3>
+            <p>El icónico autobús que te lleva a la batalla.</p>
+            <p class="price">$12.99</p>
+            <button onclick="addToCart('Battle Bus', 12.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_whiplash.jpg" alt="Vehículo 2">
+            <h3>Whiplash</h3>
+            <p>Un coche rápido y ágil, perfecto para escapar.</p>
+            <p class="price">$9.99</p>
+            <button onclick="addToCart('Whiplash', 9.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_chopper.jpg" alt="Vehículo 3">
+            <h3>Chopper</h3>
+            <p>Una moto que te permite moverte rápidamente por el mapa.</p>
+            <p class="price">$11.49</p>
+            <button onclick="addToCart('Chopper', 11.49)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_taxi.jpg" alt="Vehículo 4">
+            <h3>Taxi</h3>
+            <p>Un taxi clásico que te lleva a donde necesites.</p>
+            <p class="price">$8.99</p>
+            <button onclick="addToCart('Taxi', 8.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_bike.jpg" alt="Vehículo 5">
+            <h3>Bike</h3>
+            <p>Una bicicleta que te permite moverte con estilo.</p>
+            <p class="price">$7.49</p>
+            <button onclick="addToCart('Bike', 7.49)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_truck.jpg" alt="Vehículo 6">
+            <h3>Truck</h3>
+            <p>Un camión robusto para llevar a tu equipo.</p>
+            <p class="price">$15.99</p>
+            <button onclick="addToCart('Truck', 15.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_vehicle_rocket.jpg" alt="Vehículo 7">
+            <h3>Rocket</h3>
+            <p>Un vehículo futurista que te lleva a nuevas alturas.</p>
+            <p class="price">$20.99</p>
+            <button onclick="addToCart('Rocket', 20.99)">Añadir al carrito</button>
+        </div>
+        
+        <div class="product">
+            <img src="fortnite_battle_pass.jpg" alt="Pase de Batalla">
+            <h3>Pase de Batalla</h3>
+            <p>Compra el Pase de Batalla para desbloquear contenido exclusivo.</p>
+            <p class="price">$9.99</p>
+            <button onclick="addToCart('Pase de Batalla', 9.99)">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <div class="total">
+            Total: $<span id="total-price">0.00</span>
+        </div>
+        <button onclick="checkout()">Proceder al pago</button>
+    </div>
+    <script>
+        function filterProducts() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let products = document.querySelectorAll('.product');
+            
+            products.forEach(product => {
+                let productName = product.querySelector('h3').innerText.toLowerCase();
+                product.style.display = productName.includes(input) ? 'block' : 'none';
+            });
+        }
+    </script>
+    <script>
+        let cart = [];
+
+        function addToCart(item, price) {
+            cart.push({ item, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartItems = document.getElementById('cart-items');
+            let totalPrice = 0;
+            cartItems.innerHTML = '';
+
+            cart.forEach(item => {
+                let li = document.createElement('li');
+                li.textContent = `${item.item} - $${item.price.toFixed(2)}`;
+                cartItems.appendChild(li);
+                totalPrice += item.price;
+            });
+
+            document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert("Tu carrito está vacío.");
+            } else {
+                alert("¡Gracias por tu compra!");
+                cart = [];
+                updateCart();
+            }
+        }
+    </script>
+        <div class="store-container">
+            <h2>Pagina Principal</h2>
+            <button onclick="window.location.href='index.html'">Tienda</button>
+        </div>
+
+        <div class="store-container">
+            <h2>Valorant</h2>
+            <button onclick="window.location.href='valorant.html'">Tienda</button>
+        </div>
+        <div class="store-container">
+            <h2>Fortnite</h2>
+            <button onclick="window.location.href='fortnite.html'">Tienda</button>
+        </div>
+</body>
+</html>
