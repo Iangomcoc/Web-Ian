@@ -11,298 +11,396 @@
 <body>
     <h1>TIENDA ONLINE DE VALORANT</h1>
     <p>Bienvenido a la tienda de Valorant donde podrás comprar cualquier cosa sin necesidad de esperar hasta que aparezca en la tienda</p>
-    <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="filterProducts()">
+    <input type="text" id="searchInput" placeholder="Buscar productos...">
+    <button id="clearSearchButton">Limpiar búsqueda</button>    
     <h2>Artículos Disponibles</h2>
     <div class="store-container-valorant">
         <div class="product">
-            <img src="valorant_skin1.jpg" alt="Artículo 1">
             <h3>Vandal - Prime</h3>
             <p>Un skin de Vandal de la colección Prime, elegante y letal.</p>
+            <a href="https://www.google.com/search?q=Vandal+Prime+Valorant" target="_blank">
+                <img src="valorant_skin1.jpg">
+            </a>
             <p class="price">$9.99</p>
-            <button onclick="addToCart('Vandal - Prime', 9.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Vandal - Prime', 9.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin2.jpg" alt="Artículo 2">
             <h3>Phantom - Spectrum</h3>
             <p>Skin de Phantom con un diseño vibrante y colorido.</p>
+            <a href="https://www.google.com/search?q=Phantom+Spectrum+Valorant" target="_blank">
+                <img src="valorant_skin2.jpg">
+            </a>
             <p class="price">$12.99</p>
-            <button onclick="addToCart('Phantom - Spectrum', 12.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Phantom - Spectrum', 12.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin3.jpg" alt="Artículo 3">
             <h3>Operator - Oni</h3>
             <p>Un skin de Operator que destaca por su diseño oscuro y misterioso.</p>
+            <a href="https://www.google.com/search?q=Operator+Oni+Valorant" target="_blank">
+                <img src="valorant_skin3.jpg">
+            </a>
             <p class="price">$14.99</p>
-            <button onclick="addToCart('Operator - Oni', 14.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Operator - Oni', 14.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin4.jpg" alt="Artículo 4">
             <h3>Guardian - Spline</h3>
             <p>Skin de Guardian con un diseño futurista y elegante.</p>
+            <a href="https://www.google.com/search?q=Guardian+Spline+Valorant" target="_blank">
+                <img src="valorant_skin4.jpg">
+            </a>
             <p class="price">$8.99</p>
-            <button onclick="addToCart('Guardian - Spline', 8.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Guardian - Spline', 8.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin5.jpg" alt="Artículo 5">
             <h3>Classic - Glitchpop</h3>
             <p>Un skin de Classic que resalta con colores brillantes y efectos únicos.</p>
+            <a href="https://www.google.com/search?q=Classic+Glitchpop+Valorant" target="_blank">
+                <img src="valorant_skin5.jpg">
+            </a>
             <p class="price">$6.99</p>
-            <button onclick="addToCart('Classic - Glitchpop', 6.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Classic - Glitchpop', 6.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin6.jpg" alt="Artículo 6">
             <h3>Shorty - Winterwunderland</h3>
             <p>Skin de Shorty con un diseño festivo y encantador.</p>
+            <a href="https://www.google.com/search?q=Shorty+Winterwunderland+Valorant" target="_blank">
+                <img src="valorant_skin6.jpg">
+            </a>
             <p class="price">$5.49</p>
-            <button onclick="addToCart('Shorty - Winterwunderland', 5.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Shorty - Winterwunderland', 5.49)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin7.jpg" alt="Artículo 7">
             <h3>Stinger - Celestial</h3>
             <p>Un skin de Stinger que brilla con un diseño celestial.</p>
+            <a href="https://www.google.com/search?q=Stinger+Celestial+Valorant" target="_blank">
+                <img src="valorant_skin7.jpg">
+            </a>
             <p class="price">$7.99</p>
-            <button onclick="addToCart('Stinger - Celestial', 7.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Stinger - Celestial', 7.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin8.jpg" alt="Artículo 8">
             <h3>Knife - Karambit</h3>
             <p>Un elegante Karambit que es perfecto para los jugadores más audaces.</p>
+            <a href="https://www.google.com/search?q=Knife+Karambit+Valorant" target="_blank">
+                <img src="valorant_skin8.jpg">
+            </a>
             <p class="price">$19.99</p>
-            <button onclick="addToCart('Knife - Karambit', 19.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Knife - Karambit', 19.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin9.jpg" alt="Artículo 9">
             <h3>Marshal - Winterwunderland</h3>
             <p>Skin de Marshal con un diseño invernal encantador.</p>
+            <a href="https://www.google.com/search?q=Marshal+Winterwunderland+Valorant" target="_blank">
+                <img src="valorant_skin9.jpg">
+            </a>
             <p class="price">$10.99</p>
-            <button onclick="addToCart('Marshal - Winterwunderland', 10.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Marshal - Winterwunderland', 10.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin10.jpg" alt="Artículo 10">
             <h3>Bulldog - Valorant Go!</h3>
             <p>Skin de Bulldog de la colección Valorant Go!, divertido y colorido.</p>
+            <a href="https://www.google.com/search?q=Bulldog+Valorant+Go!+Valorant" target="_blank">
+                <img src="valorant_skin10.jpg">
+            </a>
             <p class="price">$11.49</p>
-            <button onclick="addToCart('Bulldog - Valorant Go!', 11.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Bulldog - Valorant Go!', 11.49)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin11.jpg" alt="Artículo 11">
             <h3>Vandal - Glitchpop</h3>
             <p>Un skin de Vandal de la colección Glitchpop, lleno de colores vibrantes.</p>
+            <a href="https://www.google.com/search?q=Vandal+Glitchpop+Valorant" target="_blank">
+                <img src="valorant_skin11.jpg">
+            </a>
             <p class="price">$12.99</p>
-            <button onclick="addToCart('Vandal - Glitchpop', 12.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Vandal - Glitchpop', 12.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin12.jpg" alt="Artículo 12">
             <h3>Phantom - Glitchpop</h3>
             <p>Skin de Phantom de la colección Glitchpop, lleno de colores vibrantes.</p>
+            <a href="https://www.google.com/search?q=Phantom+Glitchpop+Valorant" target="_blank">
+                <img src="valorant_skin12.jpg">
+            </a>
             <p class="price">$12.99</p>
-            <button onclick="addToCart('Phantom - Glitchpop', 12.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Phantom - Glitchpop', 12.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin13.jpg" alt="Artículo 13">
             <h3>Operator - Glitchpop</h3>
             <p>Un skin de Operator de la colección Glitchpop, lleno de colores vibrantes.</p>
+            <a href="https://www.google.com/search?q=Operator+Glitchpop+Valorant" target="_blank">
+                <img src="valorant_skin13.jpg">
+            </a>
             <p class="price">$14.99</p>
-            <button onclick="addToCart('Operator - Glitchpop', 14.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Operator - Glitchpop', 14.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin14.jpg" alt="Artículo 14">
             <h3>Judge - Glitchpop</h3>
             <p>Skin de Judge de la colección Glitchpop, lleno de colores vibrantes.</p>
+            <a href="https://www.google.com/search?q=Judge+Glitchpop+Valorant" target="_blank">
+                <img src="valorant_skin14.jpg">
+            </a>
             <p class="price">$10.99</p>
-            <button onclick="addToCart('Judge - Glitchpop', 10.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Judge - Glitchpop', 10.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin15.jpg" alt="Artículo 15">
             <h3>Classic - Winterwunderland</h3>
             <p>Skin de Classic con un diseño festivo y encantador.</p>
+            <a href="https://www.google.com/search?q=Classic+Winterwunderland+Valorant" target="_blank">
+                <img src="valorant_skin15.jpg">
+            </a>
             <p class="price">$6.99</p>
-            <button onclick="addToCart('Classic - Winterwunderland', 6.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Classic - Winterwunderland', 6.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin16.jpg" alt="Artículo 16">
             <h3>Shorty - Glitchpop</h3>
             <p>Skin de Shorty de la colección Glitchpop, lleno de colores vibrantes.</p>
+            <a href="https://www.google.com/search?q=Shorty+Glitchpop+Valorant" target="_blank">
+                <img src="valorant_skin16.jpg">
+            </a>
             <p class="price">$5.49</p>
-            <button onclick="addToCart('Shorty - Glitchpop', 5.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Shorty - Glitchpop', 5.49)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin17.jpg" alt="Artículo 17">
             <h3>Stinger - Winterwunderland</h3>
             <p>Skin de Stinger con un diseño festivo y encantador.</p>
+            <a href="https://www.google.com/search?q=Stinger+Winterwunderland+Valorant" target="_blank">
+                <img src="valorant_skin17.jpg">
+            </a>
             <p class="price">$7.99</p>
-            <button onclick="addToCart('Stinger - Winterwunderland', 7.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Stinger - Winterwunderland', 7.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin18.jpg" alt="Artículo 18">
             <h3>Knife - Butterfly</h3>
             <p>Un impresionante cuchillo mariposa que es perfecto para los jugadores más audaces.</p>
+            <a href="https://www.google.com/search?q=Knife+Butterfly+Valorant" target="_blank">
+                <img src="valorant_skin18.jpg">
+            </a>
             <p class="price">$24.99</p>
-            <button onclick="addToCart('Knife - Butterfly', 24.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Knife - Butterfly', 24.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin19.jpg" alt="Artículo 19">
             <h3>Marshal - Oni</h3>
             <p>Skin de Marshal que destaca por su diseño oscuro y misterioso.</p>
+            <a href="https://www.google.com/search?q=Marshal+Oni+Valorant" target="_blank">
+                <img src="valorant_skin19.jpg">
+            </a>
             <p class="price">$10.99</p>
-            <button onclick="addToCart('Marshal - Oni', 10.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Marshal - Oni', 10.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin20.jpg" alt="Artículo 20">
             <h3>Bulldog - Spline</h3>
             <p>Skin de Bulldog con un diseño futurista y elegante.</p>
+            <a href="https://www.google.com/search?q=Bulldog+Spline+Valorant" target="_blank">
+                <img src="valorant_skin20.jpg">
+            </a>
             <p class="price">$11.49</p>
-            <button onclick="addToCart('Bulldog - Spline', 11.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Bulldog - Spline', 11.49)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin21.jpg" alt="Artículo 21">
             <h3>Vandal - Winterwunderland</h3>
             <p>Un skin de Vandal con un diseño invernal encantador.</p>
+            <a href="https://www.google.com/search?q=Vandal+Winterwunderland+Valorant" target="_blank">
+                <img src="valorant_skin21.jpg">
+            </a>
             <p class="price">$12.99</p>
-            <button onclick="addToCart('Vandal - Winterwunderland', 12.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Vandal - Winterwunderland', 12.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin22.jpg" alt="Artículo 22">
             <h3>Phantom - Oni</h3>
             <p>Skin de Phantom que destaca por su diseño oscuro y misterioso.</p>
+            <a href="https://www.google.com/search?q=Phantom+Oni+Valorant" target="_blank">
+                <img src="valorant_skin22.jpg">
+            </a>
             <p class="price">$12.99</p>
-            <button onclick="addToCart('Phantom - Oni', 12.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Phantom - Oni', 12.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin23.jpg" alt="Artículo 23">
             <h3>Operator - Spectrum</h3>
             <p>Un skin de Operator con un diseño vibrante y colorido.</p>
+            <a href="https://www.google.com/search?q=Operator+Spectrum+Valorant" target="_blank">
+                <img src="valorant_skin23.jpg">
+            </a>
             <p class="price">$14.99</p>
-            <button onclick="addToCart('Operator - Spectrum', 14.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Operator - Spectrum', 14.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin24.jpg" alt="Artículo 24">
             <h3>Judge - Spectrum</h3>
             <p>Skin de Judge con un diseño vibrante y colorido.</p>
+            <a href="https://www.google.com/search?q=Judge+Spectrum+Valorant" target="_blank">
+                <img src="valorant_skin24.jpg">
+            </a>
             <p class="price">$10.99</p>
-            <button onclick="addToCart('Judge - Spectrum', 10.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Judge - Spectrum', 10.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin25.jpg" alt="Artículo 25">
             <h3>Classic - Spectrum</h3>
             <p>Skin de Classic con un diseño vibrante y colorido.</p>
+            <a href="https://www.google.com/search?q=Classic+Spectrum+Valorant" target="_blank">
+                <img src="valorant_skin25.jpg">
+            </a>
             <p class="price">$6.99</p>
-            <button onclick="addToCart('Classic - Spectrum', 6.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Classic - Spectrum', 6.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin26.jpg" alt="Artículo 26">
             <h3>Shorty - Oni</h3>
             <p>Skin de Shorty que destaca por su diseño oscuro y misterioso.</p>
+            <a href="https://www.google.com/search?q=Shorty+Oni+Valorant" target="_blank">
+                <img src="valorant_skin26.jpg">
+            </a>
             <p class="price">$5.49</p>
-            <button onclick="addToCart('Shorty - Oni', 5.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Shorty - Oni', 5.49)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valorant_skin27.jpg" alt="Artículo 27">
             <h3>Stinger - Oni</h3>
             <p>Skin de Stinger que destaca por su diseño oscuro y misterioso.</p>
+            <a href="https://www.google.com/search?q=Stinger+Oni+Valorant" target="_blank">
+                <img src="valorant_skin27.jpg">
+            </a>
             <p class="price">$7.99</p>
-            <button onclick="addToCart('Stinger - Oni', 7.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Stinger - Oni', 7.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="valor ant_skin28.jpg" alt="Artículo 28">
             <h3>Knife - Fade</h3>
             <p>Un cuchillo Fade que es perfecto para los jugadores que buscan un estilo único.</p>
+            <a href="https://www.google.com/search?q=Knife+Fade+Valorant" target="_blank">
+                <img src="valorant_skin28.jpg">
+            </a>
             <p class="price">$29.99</p>
-            <button onclick="addToCart('Knife - Fade', 29.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Knife - Fade', 29.99)">Añadir al carrito</button>
         </div>
     </div>
-
-    <div class="cart">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items"></ul>
-        <div class="total">
-            Total: $<span id="total-price">0.00</span>
-        </div>
-        <button onclick="checkout()">Proceder al pago</button>
-    </div>
+    
     <script>
         function filterProducts() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let products = document.querySelectorAll('.product');
-            
-            products.forEach(product => {
-                let productName = product.querySelector('h3').innerText.toLowerCase();
-                product.style.display = productName.includes(input) ? 'block' : 'none';
+            const searchInput = document.getElementById('searchInput');
+            const products = document.querySelectorAll('.product');
+    
+            const searchValue = searchInput.value.toLowerCase();
+    
+            products.forEach((product) => {
+                const productName = product.querySelector('h3').textContent.toLowerCase();
+    
+                if (productName.includes(searchValue)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
             });
         }
+    
+        document.getElementById('searchInput').addEventListener('input', filterProducts);
+    
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            filterProducts();
+        }
+    
+        document.getElementById('clearSearchButton').addEventListener('click', clearSearch);
     </script>
+    
+    <div class="cart">
+        <h3>Carrito de compras</h3>
+        <ul id="cart-list">
+        </ul>
+        <button id="pay-button" onclick="pay()">Pagar</button>
+    </div>
+    
     <script>
         let cart = [];
-
-        function addToCart(item, price) {
-            cart.push({ item, price });
+        
+        function addToCart(event, productName, price) {
+            let product = {
+                name: productName,
+                price: price,
+                quantity: 1
+            };
+        
+            let existingProduct = cart.find(p => p.name === productName);
+        
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push(product);
+            }
+        
             updateCart();
         }
-
-        function updateCart() {
-            let cartItems = document.getElementById('cart-items');
-            let totalPrice = 0;
-            cartItems.innerHTML = '';
-
-            cart.forEach(item => {
-                let li = document.createElement('li');
-                li.textContent = `${item.item} - $${item.price.toFixed(2)}`;
-                cartItems.appendChild(li);
-                totalPrice += item.price;
-            });
-
-            document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+        
+        function pay() {
+            let total = cart.reduce((acc, product) => acc + product.price * product.quantity, 0);
+            if (confirm(`¿Estás seguro de que deseas pagar $${total.toFixed(2)}?`)) {
+                alert(`El total del carrito es: $${total.toFixed(2)}`);
+                emptyCart();
+            }
         }
-
-        function checkout() {
-            if (cart.length === 0) {
-                alert("Tu carrito está vacío.");
+        
+        function updateCart() {
+            const cartList = document.getElementById('cart-list');
+        
+            cartList.innerHTML = '';
+        
+            cart.forEach((product) => {
+                const productElement = document.createElement('li');
+                productElement.innerHTML = `${product.name} x ${product.quantity} - $${product.price * product.quantity.toFixed(2)}`;
+        
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Quitar';
+                removeButton.onclick = () => {
+                    cart = cart.filter((p) => p.name !== product.name);
+                    updateCart();
+                };
+                productElement.appendChild(removeButton);
+        
+                cartList.appendChild(productElement);
+            });
+        
+            if (cart.length > 0) {
+                document.getElementById('pay-button').disabled = false;
             } else {
-                alert("¡Gracias por tu compra!");
-                cart = [];
-                updateCart();
+                document.getElementById('pay-button').disabled = true;
             }
         }
     </script>
-        <div class="store-container">
-            <h2>Pagina Principal</h2>
-            <button onclick="window.location.href='index.html'">Tienda</button>
-        </div>
-
-        <div class="store-container">
-            <h2>Valorant</h2>
-            <button onclick="window.location.href='valorant.html'">Tienda</button>
-        </div>
-        <div class="store-container">
-            <h2>Fortnite</h2>
-            <button onclick="window.location.href='fortnite.html'">Tienda</button>
-        </div>
 </body>
+<nav>
+    <div class="store-container">
+        <h2>Pagina Principal</h2>
+        <button onclick="window.location.href='index.html'">Tienda</button>
+    </div>
+
+    <div class="store-container">
+        <h2>Rocket League</h2>
+        <button onclick="window.location.href='rocketleague.html'">Tienda</button>
+    </div>
+    <div class="store-container">
+        <h2>Fortnite</h2>
+        <button onclick="window.location.href='fortnite.html'">Tienda</button>
+    </div>
+</nav>
 </html>

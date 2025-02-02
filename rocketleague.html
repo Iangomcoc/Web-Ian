@@ -10,299 +10,397 @@
 </head>
 <body>
     <h1>TIENDA ONLINE DE ROCKET LEAGUE</h1>
-    <p>Bienvenido a la tienda de Rocket donde podrás comprar cualquier cosa sin necesidad de esperar hasta que aparezca en la tienda</p>
-    <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="filterProducts()">
+    <p>Bienvenido a la tienda de Rocket League donde podrás comprar cualquier cosa sin necesidad de esperar hasta que aparezca en la tienda</p>
+    <input type="text" id="searchInput" placeholder="Buscar productos...">
+    <button id="clearSearchButton">Limpiar búsqueda</button>    
     <h2>Artículos Disponibles</h2>
     <div class="store-container-rocketleague">
         <div class="product">
-            <img src="rocket_league_item1.jpg" alt="Artículo 1">
             <h3>Neón Wheels</h3>
             <p>Neón Wheels para tu coche, ¡hazlo brillar como nunca!</p>
+            <a href="https://www.google.com/search?q=Neón+Wheels+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$5.99</p>
-            <button onclick="addToCart('Neón Wheels', 5.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Neón Wheels', 5.99)">Añadir al carrito</button>
         </div>
-
+        
         <div class="product">
-            <img src="rocket_league_item2.jpg" alt="Artículo 2">
             <h3>Octane Decal</h3>
             <p>¡Decal exclusivo para el Octane! Personaliza tu coche.</p>
+            <a href="https://www.google.com/search?q=Octane+Decal+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$2.99</p>
-            <button onclick="addToCart('Octane Decal', 2.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Octane Decal', 2.99)">Añadir al carrito</button>
         </div>
-
+        
         <div class="product">
-            <img src="rocket_league_item3.jpg" alt="Artículo 3">
             <h3>Rocket Boost</h3>
             <p>Consigue el Rocket Boost más rápido para dominar el campo.</p>
+            <a href="https://www.google.com/search?q=Rocket+Boost+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$4.49</p>
-            <button onclick="addToCart('Rocket Boost', 4.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Rocket Boost', 4.49)">Añadir al carrito</button>
         </div>
-
+        
         <div class="product">
-            <img src="rocket_league_item4.jpg" alt="Artículo 4">
             <h3>Fennec Decal</h3>
             <p>Diseño exclusivo para el Fennec, hazlo único.</p>
+            <a href="https://www.google.com/search?q=Fennec+Decal+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$3.49</p>
-            <button onclick="addToCart('Fennec Decal', 3.49)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Fennec Decal', 3.49)">Añadir al carrito</button>
         </div>
-
+        
         <div class="product">
-            <img src="rocket_league_item5.jpg" alt="Artículo 5">
             <h3>Black Market Goal Explosion</h3>
             <p>Una explosión de gol única y espectacular.</p>
-            <p class="price">$9.99</p>
-            <button onclick="addToCart('Black Market Goal Explosion', 9.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Black+Market+Goal+Explosion+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(event, 'Black Market Goal Explosion', 7.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="rocket_league_item6.jpg" alt="Artículo 6">
             <h3>Alpha Boost</h3>
             <p>¡El mítico Alpha Boost para destacar en el juego!</p>
-            <p class="price">$49.99</p>
-            <button onclick="addToCart('Alpha Boost', 49.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Alpha+Boost+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$3.99</p>
+            <button onclick="addToCart(event, 'Alpha Boost', 3.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="rocket_league_item7.jpg" alt="Artículo 7">
             <h3>Dominus GT</h3>
             <p>La versión mejorada del Dominus para más control.</p>
+            <a href="https://www.google.com/search?q=Dominus+GT+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$7.99</p>
-            <button onclick="addToCart('Dominus GT', 7.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Dominus GT', 7.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="rocket_league_item8.jpg" alt="Artículo 8">
             <h3>Painted Octane</h3>
             <p>Consigue un Octane pintado en el color que prefieras.</p>
-            <p class="price">$19.99</p>
-            <button onclick="addToCart('Painted Octane', 19.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Painted+Octane+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(event, 'Painted Octane', 7.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item9.jpg" alt="Artículo 9">
             <h3>Zomba Wheels</h3>
             <p>Llanta Zomba de edición especial para tu coche.</p>
+            <a href="https://www.google.com/search?q=Zomba+Wheels+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$6.99</p>
-            <button onclick="addToCart('Zomba Wheels', 6.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event, 'Zomba Wheels', 6.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item10.jpg" alt="Artículo 10">
             <h3>Black Market Decal</h3>
             <p>Un decal de mercado negro, exclusivo y llamativo.</p>
-            <p class="price">$8.99</p>
-            <button onclick="addToCart('Black Market Decal', 8.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Black+Market+Decal+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(event, 'Black Market Decal', 7.99)">Añadir al carrito</button>
         </div>
-
+        
         <div class="product">
-            <img src="rocket_league_item11.jpg" alt="Artículo 11">
             <h3>Titanium White Fennec</h3>
             <p>Uno de los coches más codiciados en su versión blanca.</p>
-            <p class="price">$24.99</p>
-            <button onclick="addToCart('Titanium White Fennec', 24.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Titanium+White+Fennec+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(event, 'Titanium White Fennec', 7.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="rocket_league_item12.jpg" alt="Artículo 12">
             <h3>Interstellar Decal</h3>
             <p>Un decal de Black Market con un diseño espectacular.</p>
-            <p class="price">$12.99</p>
-            <button onclick="addToCart('Interstellar Decal', 12.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Interstellar+Decal+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$4.99</p>
+            <button onclick="addToCart(event, 'Interstellar Decal', 4.99)">Añadir al carrito</button>
         </div>
-    
+        
         <div class="product">
-            <img src="rocket_league_item13.jpg" alt="Artículo 13">
             <h3>Reaper Goal Explosion</h3>
             <p>Una explosión de gol terrorífica y llamativa.</p>
-            <p class="price">$11.99</p>
-            <button onclick="addToCart('Reaper Goal Explosion', 11.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Reaper+Goal+Explosion+Rocket+League" target="_blank">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$6.99</p>
+            <button onclick="addToCart(event, 'Reaper Goal Explosion', 6.99)">Añadir al carrito</button>
         </div>
 
         <div class="product">
-            <img src="rocket_league_item14.jpg" alt="Artículo 14">
             <h3>Tw Dominus</h3>
             <p>Versión Titanium White del Dominus, ¡de lujo!</p>
-            <p class="price">$22.99</p>
-            <button onclick="addToCart('Tw Dominus', 22.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Tw+Dominus+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(event, 'Tw Dominus', 7.99)">Añadir al carrito</button>
         </div>
     
         <div class="product">
-            <img src="rocket_league_item15.jpg" alt="Artículo 15">
             <h3>Fire God Decal</h3>
             <p>Decal de mercado negro con efecto de fuego animado.</p>
-            <p class="price">$13.99</p>
-            <button onclick="addToCart('Fire God Decal', 13.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Fire+God+Decal+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$5.99</p>
+            <button onclick="addToCart(event,'Fire God Decal', 5.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item16.jpg" alt="Artículo 16">
             <h3>Draco Wheels</h3>
             <p>Llantas Draco, una de las más populares del juego.</p>
-            <p class="price">$7.99</p>
-            <button onclick="addToCart('Draco Wheels', 7.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Draco+Wheels+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$2.99</p>
+            <button onclick="addToCart(event,'Draco Wheels', 2.99)">Añadir al carrito</button>
         </div>
     
         <div class="product">
-            <img src="rocket_league_item17.jpg" alt="Artículo 17">
             <h3>Storm Watch Decal</h3>
             <p>Decal animado con un efecto de tormenta espectacular.</p>
-            <p class="price">$14.49</p>
-            <button onclick="addToCart('Storm Watch Decal', 14.49)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Storm+Watch+Decal+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$5.99</p>
+            <button onclick="addToCart(event,'Storm Watch Decal', 5.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item18.jpg" alt="Artículo 18">
             <h3>Heatwave Decal</h3>
             <p>Un decal icónico con un efecto de calor increíble.</p>
-            <p class="price">$15.99</p>
-            <button onclick="addToCart('Heatwave Decal', 15.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Heatwave+Decal+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$5.99</p>
+            <button onclick="addToCart(event,'Heatwave Decal', 5.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item19.jpg" alt="Artículo 19">
             <h3>Big Splash Goal Explosion</h3>
             <p>Una explosión de gol divertida y colorida.</p>
+            <a href="https://www.google.com/search?q=Big+Splash+Goal+Explosion+Rocket+League">
+                <img src="placeholder.png">
+            </a>
             <p class="price">$6.99</p>
-            <button onclick="addToCart('Big Splash Goal Explosion', 6.99)">Añadir al carrito</button>
+            <button onclick="addToCart(event,'Big Splash Goal Explosion', 6.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item20.jpg" alt="Artículo 20">
             <h3>Gravity Bomb Goal Explosion</h3>
             <p>Explosión de gol con un efecto gravitacional impresionante.</p>
-            <p class="price">$10.99</p>
-            <button onclick="addToCart('Gravity Bomb Goal Explosion', 10.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Gravity+Bomb+Goal+Explosion+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$6.99</p>
+            <button onclick="addToCart(event,'Gravity Bomb Goal Explosion', 6.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item21.jpg" alt="Artículo 21">
             <h3>TW Zomba Wheels</h3>
             <p>Versión Titanium White de las icónicas Zomba.</p>
-            <p class="price">$17.99</p>
-            <button onclick="addToCart('TW Zomba Wheels', 17.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Tw+Zomba+Wheels+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$2.99</p>
+            <button onclick="addToCart(event,'TW Zomba Wheels', 2.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item22.jpg" alt="Artículo 22">
             <h3>Frostbite Boost</h3>
             <p>Boost con un efecto de hielo espectacular.</p>
-            <p class="price">$4.99</p>
-            <button onclick="addToCart('Frostbite Boost', 4.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Frostbite+Boost+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$3.99</p>
+            <button onclick="addToCart(event,'Frostbite Boost', 3.99)">Añadir al carrito</button>
         </div>
         
         <div class="product">
-            <img src="rocket_league_item23.jpg" alt="Artículo 23">
             <h3>Dueling Dragons Goal Explosion</h3>
             <p>Dos dragones que chocan en una explosión épica.</p>
-            <p class="price">$19.99</p>
-            <button onclick="addToCart('Dueling Dragons Goal Explosion', 19.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Dueling+Dragons+Goal+Explosion+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$6.99</p>
+            <button onclick="addToCart(event,'Dueling Dragons Goal Explosion', 6.99)">Añadir al carrito</button>
         </div>
     
         <div class="product">
-            <img src="rocket_league_item24.jpg" alt="Artículo 24">
             <h3>Black Standard Boost</h3>
             <p>El boost estándar en color negro, elegante y codiciado.</p>
-            <p class="price">$8.99</p>
-            <button onclick="addToCart('Black Standard Boost', 8.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Black+Standard+Boost+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$2.99</p>
+            <button onclick="addToCart(event,'Black Standard Boost', 2.99)">Añadir al carrito</button>
         </div>
     
         <div class="product">
-            <img src="rocket_league_item25.jpg" alt="Artículo 25">
             <h3>Alpha Boost</h3>
             <p>El boost más exclusivo, solo para los más veteranos.</p>
-            <p class="price">$199.99</p>
-            <button onclick="addToCart('Alpha Boost', 199.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Alpha+boost+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$2.99</p>
+            <button onclick="addToCart(event,'Alpha Boost', 2.99)">Añadir al carrito</button>
         </div>
 
         <div class="product">
-            <img src="rocket_league_item26.jpg" alt="Artículo 26">
             <h3>White Fennec</h3>
             <p>Versión Titanium White del Fennec, uno de los coches más deseados.</p>
-            <p class="price">$24.99</p>
-            <button onclick="addToCart('White Fennec', 24.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=White+Fennec+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$7.99</p>
+            <button onclick="addToCart(event,'White Fennec', 7.99)">Añadir al carrito</button>
         </div>
     
         <div class="product">
-            <img src="rocket_league_item27.jpg" alt="Artículo 27">
             <h3>Mainframe Decal</h3>
             <p>Decal de mercado negro con un efecto animado futurista.</p>
-            <p class="price">$16.99</p>
-            <button onclick="addToCart('Mainframe Decal', 16.99)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Mainframe+Decal+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$5.99</p>
+            <button onclick="addToCart(event,'Mainframe Decal', 5.99)">Añadir al carrito</button>
         </div>
     
         <div class="product">
-            <img src="rocket_league_item28.jpg" alt="Artículo 28">
             <h3>Titanium White Interstellar</h3>
             <p>Decal animado con un increíble efecto de galaxia en blanco.</p>
-            <p class="price">$18.49</p>
-            <button onclick="addToCart('Titanium White Interstellar', 18.49)">Añadir al carrito</button>
+            <a href="https://www.google.com/search?q=Titanium+White+Interstellar+Rocket+League">
+                <img src="placeholder.png">
+            </a>
+            <p class="price">$5.49</p>
+            <button onclick="addToCart(event,'Titanium White Interstellar', 5.49)">Añadir al carrito</button>
         </div>
     </div>
 
-    <div class="cart">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items"></ul>
-        <div class="total">
-            Total: $<span id="total-price">0.00</span>
-        </div>
-        <button onclick="checkout()">Proceder al pago</button>
-    </div>
     <script>
         function filterProducts() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let products = document.querySelectorAll('.product');
-            
-            products.forEach(product => {
-                let productName = product.querySelector('h3').innerText.toLowerCase();
-                product.style.display = productName.includes(input) ? 'block' : 'none';
+            const searchInput = document.getElementById('searchInput');
+            const products = document.querySelectorAll('.product');
+    
+            const searchValue = searchInput.value.toLowerCase();
+    
+            products.forEach((product) => {
+                const productName = product.querySelector('h3').textContent.toLowerCase();
+    
+                if (productName.includes(searchValue)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
             });
         }
+    
+        document.getElementById('searchInput').addEventListener('input', filterProducts);
+    
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            filterProducts();
+        }
+    
+        document.getElementById('clearSearchButton').addEventListener('click', clearSearch);
     </script>
+    
+    <div class="cart">
+        <h3>Carrito de compras</h3>
+        <ul id="cart-list">
+        </ul>
+        <button id="pay-button" onclick="pay()">Pagar</button>
+    </div>
+    
     <script>
         let cart = [];
-
-        function addToCart(item, price) {
-            cart.push({ item, price });
+        
+        function addToCart(event, productName, price) {
+            let product = {
+                name: productName,
+                price: price,
+                quantity: 1
+            };
+        
+            let existingProduct = cart.find(p => p.name === productName);
+        
+            if (existingProduct) {
+                existingProduct.quantity++;
+            } else {
+                cart.push(product);
+            }
+        
             updateCart();
         }
-
-        function updateCart() {
-            let cartItems = document.getElementById('cart-items');
-            let totalPrice = 0;
-            cartItems.innerHTML = '';
-
-            cart.forEach(item => {
-                let li = document.createElement('li');
-                li.textContent = `${item.item} - $${item.price.toFixed(2)}`;
-                cartItems.appendChild(li);
-                totalPrice += item.price;
-            });
-
-            document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+        
+        function pay() {
+            let total = cart.reduce((acc, product) => acc + product.price * product.quantity, 0);
+            if (confirm(`¿Estás seguro de que deseas pagar $${total.toFixed(2)}?`)) {
+                alert(`El total del carrito es: $${total.toFixed(2)}`);
+                emptyCart();
+            }
         }
-
-        function checkout() {
-            if (cart.length === 0) {
-                alert("Tu carrito está vacío.");
+        
+        function updateCart() {
+            const cartList = document.getElementById('cart-list');
+        
+            cartList.innerHTML = '';
+        
+            cart.forEach((product) => {
+                const productElement = document.createElement('li');
+                productElement.innerHTML = `${product.name} x ${product.quantity} - $${product.price * product.quantity.toFixed(2)}`;
+        
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Quitar';
+                removeButton.onclick = () => {
+                    cart = cart.filter((p) => p.name !== product.name);
+                    updateCart();
+                };
+                productElement.appendChild(removeButton);
+        
+                cartList.appendChild(productElement);
+            });
+        
+            if (cart.length > 0) {
+                document.getElementById('pay-button').disabled = false;
             } else {
-                alert("¡Gracias por tu compra!");
-                cart = [];
-                updateCart();
+                document.getElementById('pay-button').disabled = true;
             }
         }
     </script>
-        <div class="store-container">
-            <h2>Pagina Principal</h2>
-            <button onclick="window.location.href='index.html'">Tienda</button>
-        </div>
-
-        <div class="store-container">
-            <h2>Valorant</h2>
-            <button onclick="window.location.href='valorant.html'">Tienda</button>
-        </div>
-        <div class="store-container">
-            <h2>Fortnite</h2>
-            <button onclick="window.location.href='fortnite.html'">Tienda</button>
-        </div>
 </body>
+<nav>
+    <div class="store-container">
+        <h2>Pagina Principal</h2>
+        <button onclick="window.location.href='index.html'">Tienda</button>
+    </div>
+
+    <div class="store-container">
+        <h2>Valorant</h2>
+        <button onclick="window.location.href='valorant.html'">Tienda</button>
+    </div>
+    <div class="store-container">
+        <h2>Fortnite</h2>
+        <button onclick="window.location.href='fortnite.html'">Tienda</button>
+    </div>
+</nav>
 </html>
